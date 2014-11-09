@@ -1,8 +1,12 @@
-<!DOCTYPE html>
+<! DOCTYPE html>
 <html>
 <head>
 	<title>Emerald Coast Healing Arts</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<!-- <link rel="stylesheet" type="text/css" href="style/reset.css"> -->
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,900,100italic,300italic' rel='stylesheet' type='text/css'>
+
+	<link href='http://fonts.googleapis.com/css?family=Permanent+Marker|Quicksand:300,400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
 <wrapper>
@@ -12,12 +16,15 @@
 			<button class="social">Facebook</button>
 			<button class="social">LinkedIn</button>
 		</div>
-		<div class="logo">Emerald Coast Healing Arts</div>
+		
 		<div class="contact_top">
 			<button class="contactButton">Contact Sara!</button>
 		</div>
+
+		<div class="logo"><h1>Emerald Coast Healing Arts</h1></div>
+		
 		<div class="nav">
-			<ul>
+			<ul class="nav">
 				<li class="nav_button">About Me</li>
 				<li class="nav_button">Services</li>
 				<li class="nav_button">Testimonials</li>
@@ -27,34 +34,37 @@
 		</div>
 	</div>
 <!-- nav and logo bar after scroll down -->
-	<nav class="nav_responsive">
+<!-- 	<nav class="nav_upper">
 		<div class="logo">Emerald Coast Healing Arts</div>
-		<div class="buttonwrapper_nav_responsive">
+		<div class="buttonwrapper_nav_upper">
 			<ul>
-				<li class="nav_button_responsive">About Me</li>
-				<li class="nav_button_responsive">Services</li>
-				<li class="nav_button_responsive">Testimonials</li>
-				<li class="nav_button_responsive">The Studio</li>
-				<li class="nav_button_responsive">Book a Massage</li>
+				<li class="nav_button_upper">About Me</li>
+				<li class="nav_button_upper">Services</li>
+				<li class="nav_button_upper">Testimonials</li>
+				<li class="nav_button_upper">The Studio</li>
+				<li class="nav_button_upper">Book a Massage</li>
 			</ul>
 		</div>
-		<div class="nav_social_responsive"></div>
-	</nav>
+		<div class="nav_social_upper"></div>
+	</nav> -->
 <!-- pics with pop up text mid page -->
 	<div class="pic_container">
 		<ul><!-- text to pop up over pic with transparent background on scroll -->
-			<li class="pic_box">Learn more about Sara Bell</li> 
-			<li class="pic_box">About Massage and Reflexology</li>
-			<li class="pic_box">I want to book an appointment now!</li>
+			<li class="pic_box" id="pic_box_about"><s</li> 
+			<li class="pic_box" id="pic_box_services"><span>About Massage and Reflexology</span></li>
+			<li class="pic_box" id="pic_box_book"><span>I want to book an appointment now!</span>
+			<span class="excerpt">
+				Hey there
+			</span></li>
 		</ul>
 	</div>
 <!-- main text mid page -->
 	<div class="main_text_container">
-		<p>Sara Bell is a liscenced Massage Therapist, reflexology practitioner, Pilates instructure, and wholeistic health specialist.  Her studio is located in downtown Arcata close to the square.  </p>
+		<p>Hello! Welcome to my website! I am Sara and I was born and raised in California.  After living in a variety of places from as far north as Oregon and as far south as Santa Cruz, my heart brought me back to Humboldt County.  I originally started school at Humboldt State to study kinesiology when I became interested in massage and bodywork. I attended Arcata School of Massage and graduated in 2012. During that time I also trained to become a teacher in both Mat and Reformer Stott Pilates with Ineka at Mindful Movement Collective. I instantly fell in love with bodywork and the art of healing and wellness. I continue my education whenever possible by doing Pilates workshops and advanced massage technique classes. I now also teach Postural Analysis at Arcata School of Massage. The more I learn, the more I continue to combine a wide range of techniques to find the best way for each individual client to reach optimal health and body awareness. I find through anatomy, reflexology, pathology, physiology, energetic and lymphatic flow, Swedish massage techniques, myofascial release, trigger point therapy, shiatsu and thai yoga massage fundamentals and Pilates principles along with a dialogue with each individual client we can work together to create a unique treatment plan to reach optimal health and happiness. </p>
 	</div>
 <!-- footer to be on page at all times during the scroll -->
 	<footer>
-		<div class="address_bar">Emerald Coast Healing Arts<br><a href ="info@sarabellmassage.com">EMAIL</a><br>1234 New Studio St Arcata CA 09876</div>
+		<div class="address_bar">Emerald Coast Healing Arts<br><a href ="mailto:info@sarabellmassage.com">EMAIL</a><br>1234 New Studio St Arcata CA 09876</div>
 	</footer>
 </wrapper>
 
