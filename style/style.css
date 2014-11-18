@@ -2,7 +2,7 @@ body{
 	background-color: #96A3B3;
 }
 .hero{
-	background-image: url("../images/trees.jpg");
+	background-image: url("Redwoods.JPG");
 	height: 800px;
 	background-size: 100% 100%;
 }
@@ -17,7 +17,9 @@ h1{
 	font-style: italic;
 	border-bottom: 20px;
 	font-family: 'Lato', sans-serif;
-	color: white;
+	color: #96A3B3;
+	/*background-color: #96A3B3;
+	opacity: 1;*/
 }
 .social{
 	display: inline;
@@ -51,7 +53,7 @@ li.nav_button{
 	text-align: center;
 	font-weight: 30px;
 /*	padding: 15px;*/
-	color: white;
+	color: #96A3B3;
 }
 ul.nav{
 	width: 100%;
@@ -125,7 +127,7 @@ a{
 	background-size: 100% 100%;
 }
 
-/* test*/
+/* milo hover effect on three picture area*/
 .grid {
 	/*position: relative;*/
 	margin: 0 auto;
