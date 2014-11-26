@@ -8,14 +8,15 @@
 
 	<link href='http://fonts.googleapis.com/css?family=Permanent+Marker|Quicksand:300,400,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet' type='text/css'>
+
 </head>
 <body>
-<wrapper>
+
 <!-- Header area before scroll down -->
 	<div class="hero">
 		<div class="social">
 			<a href="https://www.facebook.com/EmeraldCoastMassage" class="social"><img src="style/icons/Facebook.png" width="50px"></a>
-			<a href="#" class="social"><img src="style/icons/Twitter.png" width="50px"></a>
+			<!-- <a href="#" class="social"><img src="style/icons/Twitter.png" width="50px"></a> -->
 		</div>
 		
 		<div class="contact_top">
@@ -24,10 +25,10 @@
 
 		<h1 class="logo">Emerald Coast Healing Arts</h1>
 		
-		<div class="nav">
+		<div class="nav" id="sticky_navigation">
 			<ul class="nav">
-				<li class="nav_button"><a href="#">About</a></li>
-				<li class="nav_button"><a href="#">Services</a></li>
+				<li class="nav_button"><a href="about.html">About</a></li>
+				<li class="nav_button"><a href="services.html">Services</a></li>
 				<li class="nav_button"><a href="#">Testimonials</a></li>
 				<li class="nav_button"><a href="#">The Studio</a></li>
 				<li class="nav_button"><a href="#">Book</a></li>
@@ -41,10 +42,9 @@
 		<p>I now also teach Postural Analysis at Arcata School of Massage. The more I learn, the more I continue to combine a wide range of techniques to find the best way for each individual client to reach optimal health and body awareness. I find through anatomy, reflexology, pathology, physiology, energetic and lymphatic flow, Swedish massage techniques, myofascial release, trigger point therapy, shiatsu and thai yoga massage fundamentals and Pilates principles along with a dialogue with each individual client we can work together to create a unique treatment plan to reach optimal health and happiness. </p>
 	</div>
 <!-- main text mid page -->
-	<wrapper>
 	<ul>	
 		<li class="grid">
-			<a href="#"><figure class="effect-milo">
+			<a href="contact.html"><figure class="effect-milo">
 					<img src="style/sarahug.JPG"/>
 					<h2>Book <span>Sara</span></h2>
 				<figcaption>
@@ -54,10 +54,10 @@
 		</li>
 
 		<li class="grid">
-			<a href="#"><figure class="effect-milo">
+			<a href="about.html"><figure class="effect-milo">
 					<img src="style/clovers.JPG" /><h2>About <span>Sara</span></h2>
 				<figcaption>
-					<p>Learn more about Sara's Massage sPractice</p>
+					<p>Learn more about Sara's Massage Practice</p>
 				</figcaption>			
 			</figure></a>
 		</li>
@@ -72,13 +72,15 @@
 			</figure></a>
 		</li>
 		</ul>
-	</wrapper>	
 
 	<footer>
 		<div class="address_bar"><h4>Emerald Coast Healing Arts<br><a href ="mailto:info@sarabellmassage.com">EMAIL</a><br>1234 New Studio St Arcata CA 09876</h4></div>
 	</footer>
-</wrapper>
 
 
+<script type="text/javascript" src="script.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.sticky-kit.min.js"></script>
+  
 </body>
 </html>

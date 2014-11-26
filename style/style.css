@@ -1,10 +1,14 @@
 body{
-	background-color: #96A3B3;
+	background-color: #ffffff;
+	width: 100%;
+	height: auto;
 }
 .hero{
 	background-image: url("Redwoods.JPG");
-	height: 800px;
-	background-size: 100% 100%;
+	height: 500px;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
 }
 .logo{
 	display: inline-block;
@@ -19,6 +23,9 @@ h1{
 	font-family: 'Aclonica', sans-serif;
 	color: white;
 	text-shadow: 2px 2px 8px #000000;
+}
+h4{
+	font-family: 'Lato', sans-serif;
 }
 .social{
 	display: inline;
@@ -53,6 +60,7 @@ li.nav_button{
 	font-weight: 50px;
 	font-style: bold;
 }
+
 ul.nav{
 	width: 100%;
 	padding: 10px;
@@ -67,6 +75,11 @@ ul.nav a{
 a:hover{
 	font-size: 1.2em;
 	font-style: italic;
+}
+.main_text_container{
+	width: 100%;
+	background-color: #FFFFFF;
+	padding:10px;
 }
 .pic_container{
 	width: 100%;
@@ -93,7 +106,6 @@ a:hover{
 	right:0;
 	bottom: 0;
 	left:0;
-
 }
 .pic_box:hover .excerpt{
 	opacity: 1;
@@ -101,11 +113,11 @@ a:hover{
 footer{
 	text-align: center;
 	vertical-align: bottom;
-	color: white;
+	color: #000000;
 	display: inline-block;
 	width: 100%;
-	height: 250px;
-	font-family: 'Quicksand', sans-serif;
+	height: 100px;
+	font-family: 'Lato', sans-serif;
 }
 p{
 	font-family: 'Quicksand', sans-serif;
@@ -127,6 +139,19 @@ a{
 	background-image: url("sarahug.JPG");
 	background-size: 100% 100%;
 }
+/* contact_form page*/
+/*.contact_form{
+	background-image: url("Redwoods.JPG");
+}
+div.contact_form.hero{
+	background-color: #96A3B3;
+	height: 400px;
+	background-size: 100% 100%;
+}*/
+/*li.nav_button.top-nav{
+	width: 11%;
+}*/
+/* contact_form page*/
 
 /* milo hover effect on three picture area*/
 .grid {
@@ -219,6 +244,21 @@ figure.effect-milo p {
 	-webkit-transform: translate3d(-40px,0,0);
 	transform: translate3d(-40px,0,0);
 }
+/* END OF MILO EFFECT - hover over with words */
+
+/* SERVICES SPECIFIC PAGE */
+li.services-li{
+	list-style: square;
+	display: block;
+	text-align: left;
+}
+.services-wrapper{
+	width: 90%;
+	height: auto;
+	display: inline;
+	text-align: center;
+}
+/* END OF SERVICES SPECIFIC PAGE */
 
 /*  CONTACT FORM PAGE SPECIFIC  */
 li.form {
