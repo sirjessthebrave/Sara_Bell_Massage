@@ -1,24 +1,38 @@
 // sticky nav for home page
 
-$("#sticky_navigation").stick_in_parent()
+$(function() {
+ 
+    // grab the initial top offset of the navigation 
+    var sticky_navigation_offset_top = $('.sticky_navigation').offset().top;
+     
+    // our function that decides weather the navigation bar should have "fixed" css position or not.
+    var sticky_navigation = function(){
+        var scroll_top = $(window).scrollTop(); 
+        // our current vertical position from the top
+         
+        // if we've scrolled more than the navigation, change its position to fixed to stick to top,
+        // otherwise change it back to relative
+        if (scroll_top > sticky_navigation_offset_top) { 
+            $('.sticky_navigation').addClass('is-sticky');
+            $('.social').addClass('is-sticky');
+            $('.contact_top').addClass('is-sticky');
+        } 
+
+        else {
+            $('.sticky_navigation').removeClass('is-sticky');
+            $('.social').removeClass('is-sticky');
+            $('.contact_top').removeClass('is-sticky');
+        }   
+    };
+     
+    // run our function on load
+    sticky_navigation();
+     
+    // and run it again every time you scroll
+    $(window).scroll(function() {
+         sticky_navigation();
+    });
+ 
+});
 
 //end of sticky nav for home page
-
-
-
-// Google Map for Contact Page
-
-// var mapCanvas
-
-// function initialize() {
-//     var mapCanvas = document.getElementById('map_canvas');
-//     var mapOptions = {
-//       center: new google.maps.LatLng(44.5403, -78.5463),
-//       zoom: 8,
-//       mapTypeId: google.maps.MapTypeId.ROADMAP
-//     }
-//     var map = new google.maps.Map(mapCanvas, mapOptions);
-//   }
-
-// END Google Map for Contact Page
-
