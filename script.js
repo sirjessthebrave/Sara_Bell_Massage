@@ -9,7 +9,7 @@ $(function() {
     var sticky_navigation = function(){
         var scroll_top = $(window).scrollTop(); 
         // our current vertical position from the top
-         
+       
         // if we've scrolled more than the navigation, change its position to fixed to stick to top,
         // otherwise change it back to relative
         if (scroll_top > sticky_navigation_offset_top) { 
@@ -36,3 +36,18 @@ $(function() {
 });
 
 //end of sticky nav for home page
+
+// nav current page fuction
+$(function(){
+    // this will get the full URL at the address bar
+    var url = window.location.href; 
+
+    // passes on every "a" tag 
+    $(".nav_button a").each(function() {
+            // checks if its the same on the address bar
+        if(url == (this.href)) { 
+            $(this).closest(".nav_button").addClass("active");
+        }
+    });
+});
+// end of nav current page function

@@ -14,7 +14,7 @@ body{
 }
 .hero{
 	background-image: url("Redwoods.JPG");
-	height: 500px;
+	height: 400px;
 	background-size: cover;
 	background-attachment: fixed;
 	/*position: relative;*/
@@ -33,6 +33,10 @@ body{
 	text-decoration: none;
 	font-size: 75px;
 }
+.active{
+	border-style: outset;
+	border-color: #96C237;
+}
 h1{
 	font-size: 75px;
 	font-style: italic;
@@ -41,8 +45,14 @@ h1{
 	color: white;
 	text-shadow: 2px 2px 8px #000000;
 }
-h4{
+h2{
 	font-family: 'Lato', sans-serif;
+	padding: 2%;
+	text-align: center;
+}
+h3{
+	font-family: 'Lato', sans-serif;
+	padding: 2%;
 }
 .social{
 	display: inline;
@@ -67,6 +77,22 @@ li{
 	list-style: none;
 	display: inline-block;
 	font-family: 'Lato', sans-serif;
+}
+p{
+	font-family: 'Quicksand', sans-serif;
+	text-align: center;
+	padding: 10px;
+}
+a{
+	color: white;
+}
+.wide-block-image{
+	background-image: url("lavender.JPG");
+	height: 150px;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	z-index: 20;
 }
 li.nav_button{
 	list-style: none;
@@ -128,6 +154,7 @@ a:hover{
 	height: 300px;
 	display: inline-block;
 }
+/* milo hover effect on three picture area*/
 .pic_box{
 	display: inline-block;
 	height: 250px;
@@ -152,23 +179,7 @@ a:hover{
 .pic_box:hover .excerpt{
 	opacity: 1;
 }
-footer{
-	text-align: center;
-	vertical-align: bottom;
-	color: #000000;
-	display: inline-block;
-	width: 100%;
-	height: 100px;
-	font-family: 'Lato', sans-serif;
-}
-p{
-	font-family: 'Quicksand', sans-serif;
-	text-align: center;
-	padding: 10px;
-}
-a{
-	color: white;
-}
+
 #pic_box_about{
 	background-image: url("clovers.JPG");
 	background-size: 100% 100%;
@@ -181,26 +192,9 @@ a{
 	background-image: url("sarahug.JPG");
 	background-size: 100% 100%;
 }
-/* contact_form page*/
-/*.contact_form{
-	background-image: url("Redwoods.JPG");
-}
-div.contact_form.hero{
-	background-color: #96A3B3;
-	height: 400px;
-	background-size: 100% 100%;
-}*/
-/*li.nav_button.top-nav{
-	width: 11%;
-}*/
-/* contact_form page*/
-
-/* milo hover effect on three picture area*/
 .grid {
-	/*position: relative;*/
 	margin: 0 auto;
 	padding: 1em 0 4em;
-	/*max-width: 1000px;*/
 	list-style: none;
 	text-align: center;
 	display: inline;
@@ -211,8 +205,7 @@ div.contact_form.hero{
 	overflow: hidden;
 	margin: 10px 1%;
 	max-width: 30%;
-/*	width: 48%;
-*/	background: #3085a3;
+	background: #3085a3;
 	text-align: center;
 	cursor: pointer;
 }
@@ -290,16 +283,28 @@ figure.effect-milo p {
 /* END OF MILO EFFECT - hover over with words */
 
 /* SERVICES SPECIFIC PAGE */
+ul.services-li{
+	text-align: center;
+}
 li.services-li{
 	list-style: square;
 	display: block;
 	text-align: left;
+	text-align: center;
 }
 .services-wrapper{
 	width: 90%;
 	height: auto;
-	display: inline;
+	display: inline-block;
 	text-align: center;
+	padding-left: 10%;
+}
+.services-wrapper ul{
+	margin: 2%;
+}
+table{
+	padding: 2%;
+	display: inline-block;
 }
 /* END OF SERVICES SPECIFIC PAGE */
 
@@ -328,3 +333,15 @@ form.contact{
 	margin: 30px;
 }
 /* END CONTACR FORM PAGE */
+
+/* FOOTER */
+footer{
+	text-align: center;
+	vertical-align: bottom;
+	color: #000000;
+	display: inline-block;
+	width: 100%;
+	height: 90px;
+	font-family: 'Lato', sans-serif;
+}
+/* FOOTER */
