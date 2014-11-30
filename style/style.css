@@ -63,7 +63,7 @@ h3{
 .contact_top{
 	display: inline;
 	float: right;
-	height: 40px;
+/*	height: 40px;*/
 	padding: 15px;
 	font-family: 'Quicksand', sans-serif;
 	position: relative;
@@ -307,7 +307,39 @@ table{
 	display: inline-block;
 }
 /* END OF SERVICES SPECIFIC PAGE */
-
+/* studio page */
+#placeholderdiv{
+	text-align: center;
+}
+/* END studio page */
+/* testimonials page*/
+.testimonial_wrapper{
+	display: inline;
+	float: right;
+	height: 300px;
+}
+.testimonial_wrapper p{
+	display: inline;
+	width: 70%;
+	float: left;
+	height: auto;
+	margin: 10px;
+	text-align: center;
+	vertical-align: middle;
+}
+.left {
+	padding: 10px;
+	float: left;
+	height: auto;
+}
+.right{
+	float: right;
+	height: auto;
+}
+.testimonial_wrapper img {
+	margin: 10px;
+}
+/* END testimonials page */
 /*  CONTACT FORM PAGE SPECIFIC  */
 li.form {
 	display: block;
